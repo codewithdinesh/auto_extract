@@ -4,7 +4,7 @@ import Tabs from '@/components/Tabs'
 
 const Main = () => {
     return (
-        <div>
+        <div className=' flex-col items-center justify-center'>
             <FileUpload />
 
             <Tabs />

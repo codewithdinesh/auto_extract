@@ -2,8 +2,8 @@
 import React from 'react';
 import TabItem from './TabItem';
 import InvoiceIcon from '@/lib/icons/InvoiceIocon';
-import ProductIcon from '@/lib/icons/productIcon';
-import UsersIcon from '@/lib/icons/usersIcon';
+import ProductIcon from '@/lib/icons/ProductIcon';
+import UsersIcon from '@/lib/icons/UsersIcon';
 
 
 const Tabs = () => {
