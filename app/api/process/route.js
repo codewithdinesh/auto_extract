@@ -7,8 +7,6 @@ import { GoogleAIFileManager } from "@google/generative-ai/server";
 import mdTojson from "@/utils/mdTojson";
 
 
-
-
 dotenv.config();
 const gemini_api_key = process.env.API_KEY;
 const googleAI = new GoogleGenerativeAI(gemini_api_key);

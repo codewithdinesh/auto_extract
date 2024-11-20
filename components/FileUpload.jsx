@@ -115,7 +115,7 @@ const FileUpload = () => {
                 </div>
             )}
 
-            <DataDisplay />
+            {/* <DataDisplay /> */}
         </div>
     );
 };

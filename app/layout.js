@@ -4,6 +4,8 @@ import store from "@/lib/store";
 import "./globals.css";
 
 import { Provider } from "react-redux";
+import FileUpload from "@/components/FileUpload";
+import Main from "@/components/Main";
 
 
 
@@ -17,6 +19,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-gray-100 text-gray-800">
         <Provider store={store}>
+          <Main />
+
 
           <main className="container mx-auto p-4">{children}</main>
         </Provider>

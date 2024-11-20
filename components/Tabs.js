@@ -1,17 +1,25 @@
-import Link from "next/link";
+"use client"
+import React from 'react';
+import TabItem from './TabItem';
+import InvoiceIcon from '@/lib/icons/InvoiceIocon';
+import ProductIcon from '@/lib/icons/productIcon';
+import UsersIcon from '@/lib/icons/usersIcon';
 
-const Tabs = () => (
-    <nav className="flex space-x-4 bg-white shadow p-4 rounded">
-        <Link href="/invoices" className="text-blue-500 hover:underline">
-            Invoices
-        </Link>
-        <Link href="/products" className="text-blue-500 hover:underline">
-            Products
-        </Link>
-        <Link href="/customers" className="text-blue-500 hover:underline">
-            Customers
-        </Link>
-    </nav>
-);
+
+const Tabs = () => {
+    const tabs = [
+        { title: 'Invoices', icon: <InvoiceIcon /> },
+        { title: 'Products', icon: <ProductIcon /> },
+        { title: 'Customers', icon: <UsersIcon /> },
+    ];
+
+    return (
+        <div className=" flex  w-full justify-items-center justify-center">
+            {tabs.map((tab, index) => (
+                <TabItem key={index} title={tab.title} icon={tab.icon} />
+            ))}
+        </div>
+    );
+};
 
 export default Tabs;
