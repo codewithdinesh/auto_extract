@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  AutoExtract : Automated Data Extraction and Invoice Management
 
-## Getting Started
+This project is a **React application** that automates the extraction, processing, and management of invoice data from various file formats. The app organizes the extracted data into three main sections: **Invoices**, **Products**, and **Customers**. Real-time updates are achieved using **Redux**, ensuring consistent synchronization across all tabs.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### File Uploads
+- Supports multiple file types:
+  - **CSV Files**
+  - **Excel Files**
+  - **PDFs/Images**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### AI-Powered Data Extraction
+Utilizes AI for extracting and structuring data into three tabs:
+1. **Invoices**
+   - Fields: Serial Number, Customer Name, Product Name, Quantity, Tax, Total Amount, Date.
+2. **Products**
+   - Fields: Product Name, Quantity, Unit Price, Tax, Price with Tax .
+3. **Customers**
+   - Fields: Customer Name, Phone Number, Total Purchase Amount.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Invoices Tab
+Displays a table with columns:
+- Serial Number
+- Customer Name
+- Product Name
+- Quantity
+- Tax
+- Total Amount
+- Date
 
-## Learn More
+### Products Tab
+Displays a table with columns:
+- Product Name
+- Quantity
+- Unit Price
+- Tax
+- Price with Tax
+- Discount (optional)
 
-To learn more about Next.js, take a look at the following resources:
+### Customers Tab
+Displays a table with columns:
+- Customer Name
+- Phone Number
+- Total Purchase Amount
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## AI Test Cases
+This Application passes all the test case given.
+- Invoice PDFs
+- Invoice PDFs + Images
+- Excel Files
+- Excel Files (Multiple)
+- Mixed File Types (PDF, Image, Excel)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
+- **Frontend**:  React, NextJs, Redux, and Tailwind CSS
+- **AI Integration**: Google Gemini API
+- **Backend**:Nextjs Server (Node based")
+- **Deployment**: Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## Live Preview
+**Website**: [https://autoextract.vercel.app/](https://autoextract.vercel.app/)
