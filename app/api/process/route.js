@@ -18,8 +18,8 @@ const geminiConfig = {
 };
 
 const geminiModel = googleAI.getGenerativeModel({
-  model: 'gemini-1.5-flash',
-  // model: "gemini-1.5-pro",
+  // model: 'gemini-1.5-flash',
+  model: "gemini-1.5-pro-latest",
   geminiConfig,
 });
 

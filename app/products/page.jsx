@@ -26,9 +26,9 @@ export default function Products() {
                             <tr key={index} className="hover:bg-gray-50">
                                 <td className="border p-2">{product.name}</td>
                                 <td className="border p-2">{product.quantity}</td>
-                                <td className="border p-2">₹{product.unitPrice.toFixed(2)}</td>
-                                <td className="border p-2">₹{product.tax.toFixed(2)}</td>
-                                <td className="border p-2">₹{product.priceWithTax.toFixed(2)}</td>
+                                <td className="border p-2">₹{product.unitPrice?.toFixed(2)}</td>
+                                <td className="border p-2">₹{product.tax?.toFixed(2)}</td>
+                                <td className="border p-2">₹{product.priceWithTax?.toFixed(2)}</td>
                             </tr>
                         ))
                     ) : (
